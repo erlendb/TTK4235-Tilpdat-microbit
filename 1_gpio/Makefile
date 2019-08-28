@@ -22,8 +22,8 @@ CFLAGS += -Wall -Werror -std=gnu99
 # CFLAGS += -ggdb -Og / -O0 / -O3 etc
 
 ## Linker flags
-CFLAGS += --specs=nosys.specs -Wl,--gc-sections -T $(LINKER_SCRIPT)
-# or --specs=nano.specs -lc -lnosys
+#CFLAGS += --specs=nosys.specs -Wl,--gc-sections -T $(LINKER_SCRIPT)
+CFLAGS += --specs=nano.specs -lc -lnosys
 
 SOURCES += $(BUILD_DIR)/system_nrf51.c
 SOURCES += $(BUILD_DIR)/gcc_startup_nrf51.S
